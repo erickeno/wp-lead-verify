@@ -57,6 +57,7 @@ export type EmailWarnings =
   | 'Invalid top - level - domain(TLD) in address'
   | 'Domain does not exist'
   | null;
+export type ValidationType = 'phone' | 'email' | 'address' | 'all';
 
 export interface Lead {
   readonly firstName: string;

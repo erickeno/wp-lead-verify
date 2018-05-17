@@ -3,11 +3,10 @@ import {
   Lead,
   ResponseErrors,
   ValidateResponse,
+  ValidationType,
   WpFormat,
   WpLeadResponse
 } from '../types';
-
-export type ValidationType = 'phone' | 'email' | 'address' | 'all';
 
 /**
  * Validate a lead to ensure that the name,
