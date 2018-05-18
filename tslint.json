@@ -1,5 +1,5 @@
 {
-  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "extends": ["tslint:latest", "tslint-config-prettier", "tslint-immutable"],
   "rules": {
     "interface-name": [true, "never-prefix"],
     "object-literal-sort-keys": false,
@@ -8,6 +8,13 @@
     "no-implicit-dependencies": [true, "dev"],
 
     /* tslint-immutable rules */
+    "readonly-keyword": false,
+    "readonly-array": false,
+    "no-let": true,
+    "no-object-mutation": true,
+    "no-delete": true,
+    "no-method-signature": true,
+
     // Recommended built-in rules
     "no-var-keyword": true,
     "no-parameter-reassignment": true,
@@ -15,11 +22,8 @@
 
     // Functional style rules
     "no-mixed-interface": true,
-    "no-expression-statement": [
-      true,
-      { "ignore-prefix": ["console.", "process.exit"] }
-    ],
-    "no-if-statement": true
+    "no-expression-statement": false,
+    "no-if-statement": false
     /* end tslint-immutable rules */
   }
 }
